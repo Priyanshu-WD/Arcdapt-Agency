@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@theme {
+    --padding-cta: 13.5px 20.91px 12.25px 21.89px;
+    --rounded-cta: 50px;
+    --font-Inter: "Inter", sans-serif;
+    --font-Fraunces: "Fraunces", serif;
+    --border-cta: 1px solid #17130F;
+    --text-hero: 36px;
+    --text-hero-sm: 48px;
+    --text-hero-lg: 68px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll {
+    animation: none;
+  }
+}
+
+
